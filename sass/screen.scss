@@ -4,12 +4,11 @@
 @import "compass/reset";
 @import "compass/css3";
 @import "compass/utilities";
-@import "compass/typography";
 @import "compass/layout";
-
+@import "compass/typography";
 
 // Partials
 
 @import "page";
-@import "layout";
 @import "type";
+@import "layout";

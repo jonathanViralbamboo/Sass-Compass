@@ -1,52 +1,51 @@
+
 // PAGE STYLES
 
-$link-txt: white;
-$link-bg: #3f8abf;
+$container-padding: 20px 40px 20px 40px;
+$h-margin: 1em 0 1.2em 0;
 
-@mixin mobley {
-	@media (min-width: 0) and (max-width: 768px) {
-		padding-right: 8%;
-		padding-left: 8%;
-	}
-	@media (min-width: 769px) {
-		padding-left: 25%;
-		padding-right: 25%;
-	}
-}
 * {
 	@include box-sizing(border-box);
 }
 body {
+	font: 1.1em/1.6 sans-serif;
 	color: #222;
 	background-color: #edeff0;
 }
+h2 {
+	font-size: 1.5em;
+	margin: $h-margin;
+}
+h3 {
+	font-weight: bold;
+	margin: $h-margin;
+}
+p {
+	margin-bottom: 1em;
+}
 .main-content {
-	padding-top: 48px;
-	padding-bottom: 10%;
-	@include mobley;
+	padding: $container-padding;
 }
 .main-header {
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding: $container-padding;
 	background-color: #384047;
-	@include mobley;
 }
 %head-links {
 	display: block;
-	color: $link-txt;
+	color: white;
 	text-align: center;
 	text-decoration: none;
 	padding: 5px 15px;
 	border-radius: 5px;
 }
-.main-logo {
+.main-logo a {
 	background-color: #3ac162;
 	@extend %head-links;
 	@include single-text-shadow(rgba(0,0,0,.3), 0, 1px, 0);
 }
 .main-nav {
 	a {
-		background-color: $link-bg;
+		background-color: #3f8abf;
 		@extend %head-links;
 	}
 	li {
@@ -59,5 +58,6 @@ body {
 	font-size: .85em;
 	padding: 2.5em 0;
 	text-align: center;
+	height: 100px;
 	background-color: #b7c0c7;
 }
