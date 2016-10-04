@@ -8,3 +8,19 @@
     @include link-colors(#3f8abf, #3ac162, #ff6347, inherit);
   }
 }
+
+//headings
+
+#{ headings(all) } {
+  margin: 1em 0;
+  @include column-span(all);
+}
+#{ headings(1, 2) } {
+  color: #346893;
+}
+#{ headings(2, 4) } {
+  text-transform: uppercase;
+  border-top: 1px solid #ccc;
+  padding-top: 1.1em;
+  font-weight: bold;
+}

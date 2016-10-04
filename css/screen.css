@@ -78,34 +78,40 @@ body {
 }
 
 /* line 15, ../sass/_page.scss */
+h1 {
+  font-size: 1.8em;
+  margin: 1em 0 1.2em 0;
+}
+
+/* line 19, ../sass/_page.scss */
 h2 {
   font-size: 1.5em;
   margin: 1em 0 1.2em 0;
 }
 
-/* line 19, ../sass/_page.scss */
+/* line 23, ../sass/_page.scss */
 h3 {
   font-weight: bold;
   margin: 1em 0 1.2em 0;
 }
 
-/* line 23, ../sass/_page.scss */
+/* line 27, ../sass/_page.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 26, ../sass/_page.scss */
+/* line 30, ../sass/_page.scss */
 .main-content {
   padding: 20px 40px 20px 40px;
 }
 
-/* line 29, ../sass/_page.scss */
+/* line 33, ../sass/_page.scss */
 .main-header {
   padding: 20px 40px 20px 40px;
   background-color: #384047;
 }
 
-/* line 33, ../sass/_page.scss */
+/* line 37, ../sass/_page.scss */
 .main-logo a, .main-nav a {
   display: block;
   color: white;
@@ -115,47 +121,30 @@ p {
   border-radius: 5px;
 }
 
-/* line 41, ../sass/_page.scss */
+/* line 45, ../sass/_page.scss */
 .main-logo a {
   background-color: #3ac162;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 47, ../sass/_page.scss */
+/* line 51, ../sass/_page.scss */
 .main-nav a {
   background-color: #3f8abf;
 }
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 51, ../sass/_page.scss */
+  /* line 55, ../sass/_page.scss */
   .main-nav li {
     margin-top: 12px;
   }
 }
 
-/* line 57, ../sass/_page.scss */
+/* line 61, ../sass/_page.scss */
 .main-footer {
   font-size: .85em;
   padding: 2.5em 0;
   text-align: center;
   height: 100px;
   background-color: #b7c0c7;
-}
-
-/* line 7, ../sass/_type.scss */
-.main-content a {
-  color: #3f8abf;
-}
-/* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.main-content a:visited {
-  color: inherit;
-}
-/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.main-content a:hover {
-  color: #3ac162;
-}
-/* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
-.main-content a:active {
-  color: #ff6347;
 }
 
 /* line 10, ../sass/_layout.scss */
@@ -249,4 +238,42 @@ html, body {
     -webkit-column-span: all;
     column-span: all;
   }
+}
+
+/* line 7, ../sass/_type.scss */
+.main-content a {
+  color: #3f8abf;
+}
+/* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:visited {
+  color: inherit;
+}
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:hover {
+  color: #3ac162;
+}
+/* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:active {
+  color: #ff6347;
+}
+
+/* line 14, ../sass/_type.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 1em 0;
+  -moz-column-span: all;
+  -webkit-column-span: all;
+  column-span: all;
+}
+
+/* line 18, ../sass/_type.scss */
+h1, h2 {
+  color: #346893;
+}
+
+/* line 21, ../sass/_type.scss */
+h2, h3, h4 {
+  text-transform: uppercase;
+  border-top: 1px solid #ccc;
+  padding-top: 1.1em;
+  font-weight: bold;
 }
