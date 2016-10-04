@@ -1,29 +1,44 @@
-// PAGE STYLES
 
-// box-sizing
+// INITIAL PAGE STYLES
+
 * {
-  @include box-sizing(border-box);
+	@include box-sizing(border-box);
 }
 
-// gradients
 body {
-  @include background(radial-gradient(top, #3d69b5, #1a335e));
+	font: 1.1em/1.5 sans-serif;
+	color: #222;
+	background-color: #edeff0;
 }
 
-// transforms
-$default-transition-duration: 2s;
-$default-transition-function: ease-out;
-$default-transition-delay: 1s;
-
-.box {
-	width: 250px;
-	height: 250px;
-	background: white;
-  @include transform(translateX(100px) rotate(45deg));
-  //Takes in default values from default-transition
-  @include single-transition(transform);
+.main-header {
+	padding: 20px;
+	background-color: #384047;
 }
 
-.box:hover {
-  @include translateX(400px);
+%head-links {
+	display: block;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.main-logo a {
+	background-color: #3ac162;
+	@extend %head-links;
+	@include single-text-shadow(rgba(0,0,0, .3), 0, 1px, 0);
+}
+
+.main-nav {
+	a {
+		background-color: #3f8abf;
+		@extend %head-links;
+	}
+	li {
+		@media (min-width: 0) and (max-width: 768px) {
+			margin-top: 12px;
+		}
+	}
 }

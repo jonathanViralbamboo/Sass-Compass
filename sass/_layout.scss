@@ -1,0 +1,21 @@
+
+// LAYOUT STYLES
+$legacy-support-for-ie: false;
+$legacy-suport-for-mozilla: false;
+
+.main-header {
+  @include clearfix;
+}
+
+.main-logo {
+  @media (min-width: 769px) {
+    @include float-left;
+  }
+}
+
+.main-nav {
+  @media (min-width: 769px) {
+    @include inline-block-list(10px, left);
+    @include float-right;
+  }
+}
