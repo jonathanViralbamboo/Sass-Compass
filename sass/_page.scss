@@ -1,0 +1,29 @@
+// PAGE STYLES
+
+// box-sizing
+* {
+  @include box-sizing(border-box);
+}
+
+// gradients
+body {
+  @include background(radial-gradient(top, #3d69b5, #1a335e));
+}
+
+// transforms
+$default-transition-duration: 2s;
+$default-transition-function: ease-out;
+$default-transition-delay: 1s;
+
+.box {
+	width: 250px;
+	height: 250px;
+	background: white;
+  @include transform(translateX(100px) rotate(45deg));
+  //Takes in default values from default-transition
+  @include single-transition(transform);
+}
+
+.box:hover {
+  @include translateX(400px);
+}
