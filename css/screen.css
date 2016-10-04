@@ -63,48 +63,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 6, ../sass/_page.scss */
+/* line 7, ../sass/_page.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 9, ../sass/_page.scss */
+/* line 10, ../sass/_page.scss */
 body {
   font: 1.1em/1.6 sans-serif;
   color: #222;
   background-color: #edeff0;
 }
 
-/* line 14, ../sass/_page.scss */
+/* line 15, ../sass/_page.scss */
 h2 {
   font-size: 1.5em;
-  margin: 0.8em 0;
+  margin: 1em 0 1.2em 0;
 }
 
-/* line 18, ../sass/_page.scss */
+/* line 19, ../sass/_page.scss */
 h3 {
   font-weight: bold;
-  margin: 0.8em 0;
+  margin: 1em 0 1.2em 0;
 }
 
-/* line 22, ../sass/_page.scss */
+/* line 23, ../sass/_page.scss */
 p {
   margin-bottom: 1em;
 }
 
-/* line 25, ../sass/_page.scss */
-.main-content, .main-header {
+/* line 26, ../sass/_page.scss */
+.main-content {
   padding: 20px 40px 20px 40px;
 }
 
-/* line 28, ../sass/_page.scss */
+/* line 29, ../sass/_page.scss */
 .main-header {
+  padding: 20px 40px 20px 40px;
   background-color: #384047;
 }
 
-/* line 32, ../sass/_page.scss */
+/* line 33, ../sass/_page.scss */
 .main-logo a, .main-nav a {
   display: block;
   color: white;
@@ -114,24 +115,24 @@ p {
   border-radius: 5px;
 }
 
-/* line 40, ../sass/_page.scss */
+/* line 41, ../sass/_page.scss */
 .main-logo a {
   background-color: #3ac162;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 46, ../sass/_page.scss */
+/* line 47, ../sass/_page.scss */
 .main-nav a {
   background-color: #3f8abf;
 }
 @media (min-width: 0) and (max-width: 768px) {
-  /* line 50, ../sass/_page.scss */
+  /* line 51, ../sass/_page.scss */
   .main-nav li {
     margin-top: 12px;
   }
 }
 
-/* line 56, ../sass/_page.scss */
+/* line 57, ../sass/_page.scss */
 .main-footer {
   font-size: .85em;
   padding: 2.5em 0;
@@ -140,21 +141,21 @@ p {
   background-color: #b7c0c7;
 }
 
-/* line 8, ../sass/_layout.scss */
+/* line 10, ../sass/_layout.scss */
 .main-header {
   overflow: hidden;
   *zoom: 1;
 }
 
 @media (min-width: 769px) {
-  /* line 11, ../sass/_layout.scss */
+  /* line 13, ../sass/_layout.scss */
   .main-logo {
     float: left;
   }
 }
 
 @media (min-width: 769px) {
-  /* line 16, ../sass/_layout.scss */
+  /* line 18, ../sass/_layout.scss */
   .main-nav {
     float: right;
     margin: 0;
@@ -210,4 +211,25 @@ html, body {
   clear: both;
   position: relative;
   height: 150px;
+}
+
+@media (min-width: 769px) {
+  /* line 30, ../sass/_layout.scss */
+  .main-content {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 3em;
+    -webkit-column-gap: 3em;
+    column-gap: 3em;
+    -moz-column-rule: 1px solid #ccc;
+    -webkit-column-rule: 1px solid #ccc;
+    column-rule: 1px solid #ccc;
+  }
+  /* line 35, ../sass/_layout.scss */
+  .main-content h2, .main-content h3 {
+    -moz-column-span: all;
+    -webkit-column-span: all;
+    column-span: all;
+  }
 }

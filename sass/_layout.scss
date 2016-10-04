@@ -5,16 +5,18 @@
 $legacy-support-for-mozilla: false;
 $legacy-support-for-ie: false;
 
+$breakpoint: 769px; // Created a variable for the breakpoint. Let's use this instead. :)
+
 .main-header {
   @include clearfix;
 }
 .main-logo {
-  @media (min-width: 769px) {
+  @media (min-width: $breakpoint) {
   	@include float-left;
   }
 }
 .main-nav {
-  @media (min-width: 769px) {
+  @media (min-width: $breakpoint) {
   	@include float-right;
   	@include horizontal-list(10px, left);
   }
@@ -22,3 +24,16 @@ $legacy-support-for-ie: false;
 
 // sticky footer
 @include sticky-footer(150px, ".container", ".root-footer", ".main-footer");
+
+//mulit-column layout
+
+.main-content {
+  @media (min-width: $breakpoint) {
+    @include column-count(3);
+    @include column-gap(3em);
+    @include column-rule(1px solid #ccc);
+    h2, h3 {
+      @include column-span(all);
+    }
+  }
+}

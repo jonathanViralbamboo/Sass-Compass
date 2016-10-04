@@ -1,7 +1,8 @@
 
 // PAGE STYLES
 
-$h-margin: .8em 0;
+$container-padding: 20px 40px 20px 40px;
+$h-margin: 1em 0 1.2em 0;
 
 * {
 	@include box-sizing(border-box);
@@ -23,10 +24,10 @@ p {
 	margin-bottom: 1em;
 }
 .main-content {
-	padding: 20px 40px 20px 40px;
+	padding: $container-padding;
 }
 .main-header {
-	@extend .main-content;
+	padding: $container-padding;
 	background-color: #384047;
 }
 %head-links {
