@@ -1,21 +1,24 @@
 
+
 // LAYOUT STYLES
+
+$legacy-support-for-mozilla: false;
 $legacy-support-for-ie: false;
-$legacy-suport-for-mozilla: false;
 
 .main-header {
   @include clearfix;
 }
-
 .main-logo {
   @media (min-width: 769px) {
-    @include float-left;
+  	@include float-left;
+  }
+}
+.main-nav {
+  @media (min-width: 769px) {
+  	@include float-right;
+  	@include horizontal-list(10px, left);
   }
 }
 
-.main-nav {
-  @media (min-width: 769px) {
-    @include inline-block-list(10px, left);
-    @include float-right;
-  }
-}
+// sticky footer
+@include sticky-footer(150px, ".container", ".root-footer", ".main-footer");
