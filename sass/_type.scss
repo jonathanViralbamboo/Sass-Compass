@@ -1,0 +1,10 @@
+
+// TYPE STYLES
+
+// links
+
+.main-content {
+  a {
+    @include link-colors(#3f8abf, #3ac162, #ff6347, inherit);
+  }
+}

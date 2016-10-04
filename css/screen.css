@@ -141,6 +141,23 @@ p {
   background-color: #b7c0c7;
 }
 
+/* line 7, ../sass/_type.scss */
+.main-content a {
+  color: #3f8abf;
+}
+/* line 18, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:visited {
+  color: inherit;
+}
+/* line 24, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:hover {
+  color: #3ac162;
+}
+/* line 27, ../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/typography/links/_link-colors.scss */
+.main-content a:active {
+  color: #ff6347;
+}
+
 /* line 10, ../sass/_layout.scss */
 .main-header {
   overflow: hidden;
