@@ -1,0 +1,12 @@
+
+// Compass Sprites
+//Import all .png files from icons folder
+@import "icons/*.png";
+@include all-icons-sprites;
+
+.social a {
+	display: block;
+	width: 64px;
+	height: 64px;
+	@include hide-text;
+}
