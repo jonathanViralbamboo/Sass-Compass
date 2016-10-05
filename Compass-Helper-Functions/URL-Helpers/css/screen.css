@@ -82,6 +82,15 @@ body {
 }
 
 /* line 16, ../sass/_page.scss */
+h1 {
+  margin-bottom: .85em;
+  font-size: 1.7em;
+  vertical-align: top;
+  color: #47535b;
+  font-weight: bold;
+}
+
+/* line 23, ../sass/_page.scss */
 .designs {
   margin: 0;
   padding: 0;
@@ -111,51 +120,67 @@ body {
 .designs li.last {
   padding-right: 0;
 }
-/* line 18, ../sass/_page.scss */
+/* line 25, ../sass/_page.scss */
 .designs li {
-  width: 24.7%;
-  height: 350px;
+  position: relative;
   margin-left: .4%;
   background-repeat: no-repeat;
-  background-size: 85%;
   background-position: center center;
 }
-/* line 26, ../sass/_page.scss */
+/* line 31, ../sass/_page.scss */
 .designs li:first-child {
   border-radius: 0.5em 0 0 0.5em;
   margin-left: 0;
 }
-/* line 30, ../sass/_page.scss */
+/* line 35, ../sass/_page.scss */
 .designs li:last-child {
   border-radius: 0 0.5em 0.5em 0;
 }
 
-/* line 6, ../sass/_url-helpers.scss */
+/* line 10, ../sass/_url-helpers.scss */
 .designs li:first-child {
   background-color: #36add1;
-  background-image: url('../img/mixin-monster.png?1399310781');
 }
-/* line 10, ../sass/_url-helpers.scss */
+/* line 12, ../sass/_url-helpers.scss */
+.designs li:first-child:after {
+  background-image: url('../img/mixin-monster.png?1399310781');
+  width: 162.5px;
+  height: 207.5px;
+}
+/* line 16, ../sass/_url-helpers.scss */
 .designs li:nth-child(2) {
   background-color: #ff9100;
-  background-image: url('../img/sass-monster.png?1399312628');
-}
-/* line 14, ../sass/_url-helpers.scss */
-.designs li:nth-child(3) {
-  background-color: #4dc46f;
-  background-image: url('../img/skateboard.png?1399310709');
 }
 /* line 18, ../sass/_url-helpers.scss */
+.designs li:nth-child(2):after {
+  background-image: url('../img/sass-monster.png?1399312628');
+  width: 149px;
+  height: 204px;
+}
+/* line 22, ../sass/_url-helpers.scss */
 .designs li:last-child {
   background-color: #a183c9;
+}
+/* line 24, ../sass/_url-helpers.scss */
+.designs li:last-child:after {
   background-image: url('../img/reward.png?1399310865');
+  width: 213px;
+  height: 205.5px;
 }
-
-@font-face {
-  font-family: 'icomoon';
-  src: url("fonts/icomoon.woff") format("woff"), url("fonts/icomoon.ttf") format("truetype");
+/* line 28, ../sass/_url-helpers.scss */
+.designs li {
+  width: 33.05%;
+  height: 300px;
 }
-/* line 31, ../sass/_url-helpers.scss */
-[class^="icon-"] {
-  font-family: 'icomoon';
+/* line 32, ../sass/_url-helpers.scss */
+.designs li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  background-size: 100%;
 }

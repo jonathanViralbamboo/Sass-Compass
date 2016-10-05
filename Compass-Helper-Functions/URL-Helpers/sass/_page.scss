@@ -13,14 +13,19 @@ body {
 .container {
 	padding: 5% 5% 0;
 }
+h1 {
+	margin-bottom: .85em;
+	font-size: 1.7em;
+	vertical-align: top;
+	color: #47535b;
+	font-weight: bold;
+}
 .designs {
 	@include horizontal-list;
 	li {
-		width: 24.7%;
-		height: 350px;
+		position: relative;
 		margin-left: .4%;
 		background-repeat: no-repeat;
-		background-size: 85%;
 		background-position: center center;
 	}
 	li:first-child {
