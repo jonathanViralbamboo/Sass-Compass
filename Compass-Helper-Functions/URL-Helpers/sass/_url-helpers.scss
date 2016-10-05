@@ -1,23 +1,23 @@
 // URL HELPERS
 
 // Images
-
+//image-url follows the path to the img folder defined in config.rb.
 .designs {
 	li:first-child {
 		background-color: #36add1;
-		background-image: url('../img/mixin-monster.png');
+		background-image: image-url('mixin-monster.png');
 	}
 	li:nth-child(2) {
 		background-color: #ff9100;
-		background-image: url('../img/sass-monster.png');
+		background-image: image-url('sass-monster.png');
 	}
 	li:nth-child(3) {
 		background-color: #4dc46f;
-		background-image:  url('../img/skateboard.png');
+		background-image:  image-url('skateboard.png');
 	}
 	li:last-child {
 		background-color: #a183c9;
-		background-image: url('../img/reward.png');
+		background-image: image-url('reward.png');
 	}
 }
 
@@ -25,7 +25,7 @@
 
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.woff') format("woff"), 
+  src: url('fonts/icomoon.woff') format("woff"),
        url('fonts/icomoon.ttf') format("truetype");
 }
 [class^="icon-"] {

@@ -133,22 +133,22 @@ body {
 /* line 6, ../sass/_url-helpers.scss */
 .designs li:first-child {
   background-color: #36add1;
-  background-image: url("../img/mixin-monster.png");
+  background-image: url('../img/mixin-monster.png?1399310781');
 }
 /* line 10, ../sass/_url-helpers.scss */
 .designs li:nth-child(2) {
   background-color: #ff9100;
-  background-image: url("../img/sass-monster.png");
+  background-image: url('../img/sass-monster.png?1399312628');
 }
 /* line 14, ../sass/_url-helpers.scss */
 .designs li:nth-child(3) {
   background-color: #4dc46f;
-  background-image: url("../img/skateboard.png");
+  background-image: url('../img/skateboard.png?1399310709');
 }
 /* line 18, ../sass/_url-helpers.scss */
 .designs li:last-child {
   background-color: #a183c9;
-  background-image: url("../img/reward.png");
+  background-image: url('../img/reward.png?1399310865');
 }
 
 @font-face {
