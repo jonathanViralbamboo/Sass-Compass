@@ -6,6 +6,12 @@
 	height: image-height($img) / 2;
 }
 
+.logo {
+	display: inline-block;
+	margin-right: .2em;
+	@include replace-text-with-dimensions('th-logo.png');
+}
+
 .designs {
 	li:first-child {
 		background-color: #36add1;

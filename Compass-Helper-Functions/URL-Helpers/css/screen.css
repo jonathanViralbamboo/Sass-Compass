@@ -137,42 +137,57 @@ h1 {
   border-radius: 0 0.5em 0.5em 0;
 }
 
-/* line 10, ../sass/_url-helpers.scss */
+/* line 9, ../sass/_url-helpers.scss */
+.logo {
+  display: inline-block;
+  margin-right: .2em;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  text-transform: capitalize;
+  background-image: url('../img/th-logo.png?1399343082');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 39px;
+  height: 43px;
+}
+
+/* line 16, ../sass/_url-helpers.scss */
 .designs li:first-child {
   background-color: #36add1;
 }
-/* line 12, ../sass/_url-helpers.scss */
+/* line 18, ../sass/_url-helpers.scss */
 .designs li:first-child:after {
   background-image: url('../img/mixin-monster.png?1399310781');
   width: 162.5px;
   height: 207.5px;
 }
-/* line 16, ../sass/_url-helpers.scss */
+/* line 22, ../sass/_url-helpers.scss */
 .designs li:nth-child(2) {
   background-color: #ff9100;
 }
-/* line 18, ../sass/_url-helpers.scss */
+/* line 24, ../sass/_url-helpers.scss */
 .designs li:nth-child(2):after {
   background-image: url('../img/sass-monster.png?1399312628');
   width: 149px;
   height: 204px;
 }
-/* line 22, ../sass/_url-helpers.scss */
+/* line 28, ../sass/_url-helpers.scss */
 .designs li:last-child {
   background-color: #a183c9;
 }
-/* line 24, ../sass/_url-helpers.scss */
+/* line 30, ../sass/_url-helpers.scss */
 .designs li:last-child:after {
   background-image: url('../img/reward.png?1399310865');
   width: 213px;
   height: 205.5px;
 }
-/* line 28, ../sass/_url-helpers.scss */
+/* line 34, ../sass/_url-helpers.scss */
 .designs li {
   width: 33.05%;
   height: 300px;
 }
-/* line 32, ../sass/_url-helpers.scss */
+/* line 38, ../sass/_url-helpers.scss */
 .designs li:after {
   content: "";
   display: block;
