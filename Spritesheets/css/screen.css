@@ -122,9 +122,9 @@ h1 {
   padding-right: 0;
 }
 
-/* line 80, icons/*.png */
+/* line 120, icons/*.png */
 .icons-sprite, .icons-dribbble, .icons-facebook, .icons-github, .icons-mail, .icons-twitter {
-  background-image: url('../img/icons-sb5ca74fa2a.png');
+  background-image: url('../img/icons-s3d9ee72b91.png');
   background-repeat: no-repeat;
 }
 
@@ -132,25 +132,45 @@ h1 {
 .icons-dribbble {
   background-position: 0 0;
 }
-
-/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-facebook {
+/* line 59, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-dribbble:hover, .icons-dribbble.dribbble-hover {
   background-position: 0 -64px;
 }
 
 /* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-github {
+.icons-facebook {
   background-position: 0 -128px;
 }
-
-/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-mail {
+/* line 59, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-facebook:hover, .icons-facebook.facebook-hover {
   background-position: 0 -192px;
 }
 
 /* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
-.icons-twitter {
+.icons-github {
   background-position: 0 -256px;
+}
+/* line 59, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-github:hover, .icons-github.github-hover {
+  background-position: 0 -320px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mail {
+  background-position: 0 -384px;
+}
+/* line 59, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-mail:hover, .icons-mail.mail-hover {
+  background-position: 0 -448px;
+}
+
+/* line 84, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter {
+  background-position: 0 -512px;
+}
+/* line 59, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/sprites/_base.scss */
+.icons-twitter:hover, .icons-twitter.twitter-hover {
+  background-position: 0 -576px;
 }
 
 /* line 7, ../sass/_sprites.scss */
