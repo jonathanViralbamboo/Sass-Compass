@@ -1,0 +1,41 @@
+
+// INITIAL PAGE STYLES
+
+$br: .5em;
+
+* {
+	@include box-sizing(border-box);
+}
+body {
+	font: 1.1em/1.5 sans-serif;
+	background: #f7f7f7;
+}
+.button {
+	text-decoration: none;
+	font-size: 1.1em;
+	padding: .5em 0;
+	display: block;
+	width: 30%;
+	text-align: center;
+	margin: 2.5em auto;
+	border-radius: $br;
+}
+.container {
+	padding: 3% 5%;
+}
+.colors {
+	@include horizontal-list;
+	li {
+		width: 19.65%;
+		height: 300px;
+		margin-left: .4%;
+	}
+	li:first-child {
+		border-radius: $br 0 0 $br;
+		margin-left: 0;
+	}
+	li:last-child {
+		border-radius: 0 $br $br 0;
+	}
+}
+
