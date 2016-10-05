@@ -1,7 +1,10 @@
 
 // Compass Sprites
-//Import all .png files from icons folder
-@import "icons/*.png";
+
+$icons-spacing: 20px;
+$icons-layout: smart;
+//$icons-sprite-dimensions: true; //Prints icons as native size
+@import "icons/*.png"; //Import all .png files from icons folder
 @include all-icons-sprites;
 
 .social a {

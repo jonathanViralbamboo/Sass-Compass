@@ -124,7 +124,7 @@ h1 {
 
 /* line 120, icons/*.png */
 .icons-sprite, .icons-dribbble, .icons-facebook, .icons-github, .icons-mail, .icons-twitter {
-  background-image: url('../img/icons-s3d9ee72b91.png');
+  background-image: url('../img/icons-saa9ba30988.png');
   background-repeat: no-repeat;
 }
 
@@ -173,7 +173,7 @@ h1 {
   background-position: 0 -576px;
 }
 
-/* line 7, ../sass/_sprites.scss */
+/* line 10, ../sass/_sprites.scss */
 .social a {
   display: block;
   width: 64px;
